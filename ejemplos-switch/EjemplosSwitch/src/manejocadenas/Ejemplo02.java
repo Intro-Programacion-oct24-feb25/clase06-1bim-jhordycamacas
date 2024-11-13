@@ -15,7 +15,7 @@ public class Ejemplo02 {
         String pais;
         
         pais = "Ecuador";
-        //      0123456
+        //      0123456 para esta se lee desde 0 es decir 0 es la primera letra
         char letra = pais.charAt(0);
         System.out.printf("%s\n", letra);
         

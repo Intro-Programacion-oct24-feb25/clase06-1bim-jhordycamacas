@@ -73,11 +73,11 @@ public class ComercioTres {
                 }
             }
         }
-        if (porcentajeSeguro >=1 && porcentajeSeguro <= 15){
-            adicionalSeguro = (sueldoBasico * porcentajeSeguro)/100;
+       /* if (porcentajeSeguro >=1 && porcentajeSeguro <= 15){
+           
         }else{ 
             porcentajeSeguro = 10;
-            adicionalSeguro = (sueldoBasico * porcentajeSeguro)/100;
+            
                     }
         /*Esta fue mi solucion en un principio e igual funciona, puesto que 
         se calcula el adicionalSeguro directamente con el porcentajeSeguro
@@ -95,6 +95,26 @@ public class ComercioTres {
         no cambia el valor ingresado siempre y cuando se cumpla la condicion, caso contrario
         valdra 10
        */
+        
+        /*opción 2
+        if (porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+        Esta opcion no funciona puesto que el rango no esta bien describido
+        */
+         /* opción 3
+        if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+        Esta solucion si funciona puesto que si toma en cuenta los valores dentro del rnago
+        esto debido al or puesto que si fuera and no funcionaria
+        */  
+          // opción 4
+        if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+        
+        adicionalSeguro = (sueldoBasico * porcentajeSeguro)/100;
         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
         
         System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"
