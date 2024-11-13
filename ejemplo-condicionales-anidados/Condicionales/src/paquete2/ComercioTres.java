@@ -79,6 +79,11 @@ public class ComercioTres {
             porcentajeSeguro = 10;
             adicionalSeguro = (sueldoBasico * porcentajeSeguro)/100;
                     }
+        /*Esta fue mi solucion en un principio e igual funciona, puesto que 
+        se calcula el adicionalSeguro directamente con el porcentajeSeguro
+        ingresado siempre y cuando la condicion se cumpla caso contrario el 
+        porcentajeSeguro sera 10 y con ese dato se calcula el adicionalSeguro
+        */
        
        
         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
