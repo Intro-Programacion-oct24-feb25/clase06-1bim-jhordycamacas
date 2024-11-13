@@ -90,7 +90,10 @@ public class ComercioTres {
         } else {
             porcentajeSeguro = 10;
         }
-        Esta solucion igualmente es valida, siempre y cuando 
+        Esta solucion igualmente es valida, siempre y cuando al final de la condicion
+        se haga el calculo de adicionalSeguro, ademas que al sumar porcentajeSeguro mas 0
+        no cambia el valor ingresado siempre y cuando se cumpla la condicion, caso contrario
+        valdra 10
        */
         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
         
