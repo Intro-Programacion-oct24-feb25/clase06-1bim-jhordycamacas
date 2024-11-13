@@ -84,8 +84,14 @@ public class ComercioTres {
         ingresado siempre y cuando la condicion se cumpla caso contrario el 
         porcentajeSeguro sera 10 y con ese dato se calcula el adicionalSeguro
         */
-       
-       
+        /* opción 1
+        if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
+            porcentajeSeguro = porcentajeSeguro + 0;
+        } else {
+            porcentajeSeguro = 10;
+        }
+        Esta solucion igualmente es valida, siempre y cuando 
+       */
         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
         
         System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"

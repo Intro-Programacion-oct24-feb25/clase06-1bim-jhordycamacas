@@ -42,6 +42,9 @@ public class EjemploCadenas02 {
                 pais);
         
         System.out.printf("%s", cadenaFinal);
-        
+        /* El .format es usado para acumular datos, ya sean enteros decimales o
+        o cadenas en este caso fue cadena, de manera que al acumular datos, en 
+        el momento en que se imprime se mostrara todos los datos acumulados
+        */
     }
 }
