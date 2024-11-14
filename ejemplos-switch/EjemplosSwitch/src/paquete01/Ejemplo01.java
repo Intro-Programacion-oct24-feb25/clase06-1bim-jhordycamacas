@@ -25,7 +25,9 @@ public class Ejemplo01 {
         
         switch(cadena){
             case "Lunes":
-                System.out.printf("%s", cadena);
+            case "lunes":
+            case "LUNES":
+                System.out.printf("%s\n", cadena.toUpperCase());
                 break;
             
             case "Martes":
