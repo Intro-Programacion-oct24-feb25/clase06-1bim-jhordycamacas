@@ -30,7 +30,9 @@ public class Ejemplo032 {
         nombre = nombre.toLowerCase();
         // nombre = "atacames"
         char valor = nombre.charAt(0); // obtener el primer caracter de una
-        String inicial = nombre.substring(0,1);
+        String inicial = nombre.substring(0,1);/*como debemos imprimir la inical en mayuscula nos ayudamos de una nueva variable
+        en este caso con un substring para que tome la inicial, despues imprimimos junto con un toUpperCase, para que 
+        la inicial se imprima en mayusculas*/
         // cadena
         //  L   o   j   a
         //  0   1   2   3
@@ -40,6 +42,9 @@ public class Ejemplo032 {
             case 'i':
             case 'o':
             case 'u':
+                /*Se coloco los case asi para faciliatr el manejo, ademas de que es una forma mas facil de colocarlo
+                sin embargo hay q tomar en cuenta q la inicial debe ser presentada en mayusculas
+                */
                 System.out.printf("Nombre con inicial %s de %s\n", 
                         inicial.toUpperCase(),
                         nombre.toLowerCase());
