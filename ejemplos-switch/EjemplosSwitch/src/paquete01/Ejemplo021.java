@@ -31,15 +31,15 @@ public class Ejemplo021 {
         int dia;
         int mes;
         int year;
-       
+        String nombremes = "";
         
         System.out.println("Ingrese el dia de nacimiento");
         dia = entrada.nextInt();
-        System.out.println("Ingrese el mes de nacimiento");
+        System.out.println("Ingrese el numero de mes de nacimiento");
         mes = entrada.nextInt();
         System.out.println("Ingrese el año de nacimiento");
         year = entrada.nextInt();
-        String nombremes = "";
+        // se debe inicializar con "" por que si no se da ningun caso la variable queda sin ser inicializada 
         
         switch (mes) {
             case 1:
