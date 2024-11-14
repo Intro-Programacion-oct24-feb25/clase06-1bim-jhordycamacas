@@ -95,7 +95,7 @@ public class Ejemplo021 {
         }
         System.out.printf("Usted ha nacido el %d de %s de %d\n",
                 dia,
-                nombremes,
+                nombremes.toUpperCase(),
                 year);
 
     }
