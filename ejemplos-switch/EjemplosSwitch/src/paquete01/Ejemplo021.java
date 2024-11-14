@@ -7,7 +7,7 @@ Año: 1980
 
 salida
 
-Usted ha nacido el 7 de febrero de 1980
+Usted ha nacido el 7 de FEBRERO de 1980
  */
 package paquete01;
 
@@ -39,7 +39,7 @@ public class Ejemplo021 {
         mes = entrada.nextInt();
         System.out.println("Ingrese el año de nacimiento");
         year = entrada.nextInt();
-        // se debe inicializar con "" por que si no se da ningun caso la variable queda sin ser inicializada 
+        // se debe inicializar la string con "" por que si no se da ningun caso la variable queda sin ser inicializada 
         
         switch (mes) {
             case 1:
